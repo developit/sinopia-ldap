@@ -71,3 +71,9 @@ Auth.prototype.authenticate = function(user, password, callback) {
 
   })
 }
+
+Auth.prototype.adduser = function(user, password, callback) {
+    // Simulate registration because after this, 
+    // sinopia will call authenticate to verify the credentials 
+    callback(null, true)
+}
