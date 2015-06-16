@@ -44,7 +44,7 @@ Auth.prototype.authenticate = function(user, password, callback) {
          }
       })
 
-      return callback(null, false)
+      return callback({ err: err}, false)
     }
 
     if (ldap_user) {
